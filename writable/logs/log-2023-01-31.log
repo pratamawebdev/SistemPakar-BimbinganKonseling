@@ -1,0 +1,135 @@
+ERROR - 2023-01-31 14:31:29 --> mysqli_sql_exception: Unknown column 'user.deleted_at' in 'where clause' in D:\TRANSLUNATIC\AA_SISTEM_PAKAR_CI4\smoove\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\TRANSLUNATIC\AA_SISTEM_PAKAR_CI4\smoove\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\TRANSLUNATIC\AA_SISTEM_PAKAR_CI4\smoove\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\TRANSLUNATIC\AA_SISTEM_PAKAR_CI4\smoove\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\TRANSLUNATIC\AA_SISTEM_PAKAR_CI4\smoove\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\TRANSLUNATIC\AA_SISTEM_PAKAR_CI4\smoove\system\Model.php(575): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 D:\TRANSLUNATIC\AA_SISTEM_PAKAR_CI4\smoove\system\Model.php(663): CodeIgniter\Model->countAllResults()
+#6 D:\TRANSLUNATIC\AA_SISTEM_PAKAR_CI4\smoove\system\BaseModel.php(657): CodeIgniter\Model->shouldUpdate(Array)
+#7 D:\TRANSLUNATIC\AA_SISTEM_PAKAR_CI4\smoove\app\Controllers\User.php(144): CodeIgniter\BaseModel->save(Array)
+#8 D:\TRANSLUNATIC\AA_SISTEM_PAKAR_CI4\smoove\system\CodeIgniter.php(925): App\Controllers\User->register()
+#9 D:\TRANSLUNATIC\AA_SISTEM_PAKAR_CI4\smoove\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 D:\TRANSLUNATIC\AA_SISTEM_PAKAR_CI4\smoove\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\TRANSLUNATIC\AA_SISTEM_PAKAR_CI4\smoove\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\TRANSLUNATIC\AA_SISTEM_PAKAR_CI4\smoove\system\Commands\Server\rewrite.php(47): require_once('D:\\TRANSLUNATIC...')
+#13 {main}
+CRITICAL - 2023-01-31 14:52:18 --> Undefined constant "App\Controllers\total"
+in APPPATH\Controllers\Konsultasi.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Konsultasi->pertanyaan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konsultasi))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-31 23:04:15 --> mysqli_sql_exception: Unknown column 'user.deleted_at' in 'where clause' in C:\xxampp\htdocs\smoove\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xxampp\htdocs\smoove\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xxampp\htdocs\smoove\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xxampp\htdocs\smoove\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xxampp\htdocs\smoove\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xxampp\htdocs\smoove\system\Model.php(575): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xxampp\htdocs\smoove\system\Model.php(663): CodeIgniter\Model->countAllResults()
+#6 C:\xxampp\htdocs\smoove\system\BaseModel.php(657): CodeIgniter\Model->shouldUpdate(Array)
+#7 C:\xxampp\htdocs\smoove\app\Controllers\User.php(144): CodeIgniter\BaseModel->save(Array)
+#8 C:\xxampp\htdocs\smoove\system\CodeIgniter.php(925): App\Controllers\User->register()
+#9 C:\xxampp\htdocs\smoove\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 C:\xxampp\htdocs\smoove\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xxampp\htdocs\smoove\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xxampp\htdocs\smoove\system\Commands\Server\rewrite.php(47): require_once('C:\\xxampp\\htdoc...')
+#13 {main}
+ERROR - 2023-01-31 23:13:46 --> mysqli_sql_exception: Unknown column 'siswa.deleted_at' in 'where clause' in C:\xxampp\htdocs\smoove\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xxampp\htdocs\smoove\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xxampp\htdocs\smoove\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xxampp\htdocs\smoove\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xxampp\htdocs\smoove\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xxampp\htdocs\smoove\system\Model.php(575): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xxampp\htdocs\smoove\system\Model.php(663): CodeIgniter\Model->countAllResults()
+#6 C:\xxampp\htdocs\smoove\system\BaseModel.php(657): CodeIgniter\Model->shouldUpdate(Array)
+#7 C:\xxampp\htdocs\smoove\app\Controllers\Konsultasi.php(50): CodeIgniter\BaseModel->save(Array)
+#8 C:\xxampp\htdocs\smoove\system\CodeIgniter.php(925): App\Controllers\Konsultasi->index()
+#9 C:\xxampp\htdocs\smoove\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konsultasi))
+#10 C:\xxampp\htdocs\smoove\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xxampp\htdocs\smoove\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xxampp\htdocs\smoove\system\Commands\Server\rewrite.php(47): require_once('C:\\xxampp\\htdoc...')
+#13 {main}
+ERROR - 2023-01-31 23:31:09 --> mysqli_sql_exception: Unknown column 'permasalahan.deleted_at' in 'where clause' in C:\xxampp\htdocs\smoove\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xxampp\htdocs\smoove\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xxampp\htdocs\smoove\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xxampp\htdocs\smoove\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xxampp\htdocs\smoove\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xxampp\htdocs\smoove\system\Model.php(575): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xxampp\htdocs\smoove\system\Model.php(663): CodeIgniter\Model->countAllResults()
+#6 C:\xxampp\htdocs\smoove\system\BaseModel.php(657): CodeIgniter\Model->shouldUpdate(Array)
+#7 C:\xxampp\htdocs\smoove\app\Controllers\Permasalahan.php(51): CodeIgniter\BaseModel->save(Array)
+#8 C:\xxampp\htdocs\smoove\system\CodeIgniter.php(925): App\Controllers\Permasalahan->create()
+#9 C:\xxampp\htdocs\smoove\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permasalahan))
+#10 C:\xxampp\htdocs\smoove\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xxampp\htdocs\smoove\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xxampp\htdocs\smoove\system\Commands\Server\rewrite.php(47): require_once('C:\\xxampp\\htdoc...')
+#13 {main}
+ERROR - 2023-01-31 23:51:46 --> mysqli_sql_exception: Unknown column 'aturan.deleted_at' in 'where clause' in C:\xxampp\htdocs\smoove\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xxampp\htdocs\smoove\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xxampp\htdocs\smoove\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xxampp\htdocs\smoove\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xxampp\htdocs\smoove\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xxampp\htdocs\smoove\system\Model.php(575): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xxampp\htdocs\smoove\system\Model.php(663): CodeIgniter\Model->countAllResults()
+#6 C:\xxampp\htdocs\smoove\system\BaseModel.php(657): CodeIgniter\Model->shouldUpdate(Array)
+#7 C:\xxampp\htdocs\smoove\app\Controllers\Aturan.php(61): CodeIgniter\BaseModel->save(Array)
+#8 C:\xxampp\htdocs\smoove\system\CodeIgniter.php(925): App\Controllers\Aturan->create()
+#9 C:\xxampp\htdocs\smoove\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aturan))
+#10 C:\xxampp\htdocs\smoove\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xxampp\htdocs\smoove\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xxampp\htdocs\smoove\system\Commands\Server\rewrite.php(47): require_once('C:\\xxampp\\htdoc...')
+#13 {main}
+ERROR - 2023-01-31 23:52:51 --> mysqli_sql_exception: Unknown column 'aturan.deleted_at' in 'where clause' in C:\xxampp\htdocs\smoove\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xxampp\htdocs\smoove\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xxampp\htdocs\smoove\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xxampp\htdocs\smoove\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xxampp\htdocs\smoove\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xxampp\htdocs\smoove\system\Model.php(575): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xxampp\htdocs\smoove\system\Model.php(663): CodeIgniter\Model->countAllResults()
+#6 C:\xxampp\htdocs\smoove\system\BaseModel.php(657): CodeIgniter\Model->shouldUpdate(Array)
+#7 C:\xxampp\htdocs\smoove\app\Controllers\Aturan.php(61): CodeIgniter\BaseModel->save(Array)
+#8 C:\xxampp\htdocs\smoove\system\CodeIgniter.php(925): App\Controllers\Aturan->create()
+#9 C:\xxampp\htdocs\smoove\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aturan))
+#10 C:\xxampp\htdocs\smoove\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xxampp\htdocs\smoove\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xxampp\htdocs\smoove\system\Commands\Server\rewrite.php(47): require_once('C:\\xxampp\\htdoc...')
+#13 {main}
+ERROR - 2023-01-31 23:53:39 --> mysqli_sql_exception: Unknown column 'aturan.deleted_at' in 'where clause' in C:\xxampp\htdocs\smoove\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xxampp\htdocs\smoove\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xxampp\htdocs\smoove\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xxampp\htdocs\smoove\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xxampp\htdocs\smoove\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xxampp\htdocs\smoove\system\Model.php(575): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xxampp\htdocs\smoove\system\Model.php(663): CodeIgniter\Model->countAllResults()
+#6 C:\xxampp\htdocs\smoove\system\BaseModel.php(657): CodeIgniter\Model->shouldUpdate(Array)
+#7 C:\xxampp\htdocs\smoove\app\Controllers\Aturan.php(61): CodeIgniter\BaseModel->save(Array)
+#8 C:\xxampp\htdocs\smoove\system\CodeIgniter.php(925): App\Controllers\Aturan->create()
+#9 C:\xxampp\htdocs\smoove\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aturan))
+#10 C:\xxampp\htdocs\smoove\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xxampp\htdocs\smoove\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xxampp\htdocs\smoove\system\Commands\Server\rewrite.php(47): require_once('C:\\xxampp\\htdoc...')
+#13 {main}
+ERROR - 2023-01-31 23:54:03 --> mysqli_sql_exception: Unknown column 'aturan.deleted_at' in 'where clause' in C:\xxampp\htdocs\smoove\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xxampp\htdocs\smoove\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xxampp\htdocs\smoove\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xxampp\htdocs\smoove\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xxampp\htdocs\smoove\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xxampp\htdocs\smoove\system\Model.php(575): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xxampp\htdocs\smoove\system\Model.php(663): CodeIgniter\Model->countAllResults()
+#6 C:\xxampp\htdocs\smoove\system\BaseModel.php(657): CodeIgniter\Model->shouldUpdate(Array)
+#7 C:\xxampp\htdocs\smoove\app\Controllers\Aturan.php(61): CodeIgniter\BaseModel->save(Array)
+#8 C:\xxampp\htdocs\smoove\system\CodeIgniter.php(925): App\Controllers\Aturan->create()
+#9 C:\xxampp\htdocs\smoove\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aturan))
+#10 C:\xxampp\htdocs\smoove\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xxampp\htdocs\smoove\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xxampp\htdocs\smoove\system\Commands\Server\rewrite.php(47): require_once('C:\\xxampp\\htdoc...')
+#13 {main}
